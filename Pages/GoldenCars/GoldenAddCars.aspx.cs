@@ -48,9 +48,10 @@ namespace Cars_System.Pages.GoldenCars
 
         protected void AddCarbtn_Click(object sender, EventArgs e)
         {
+            int contractnew = GetHighestContract();
             string Carname = Carnametxt.Text;
             string Buyername = Purchasernametxt.Text;
-            string contractnumber = contractnumtxt.Text;
+            string contractnumber = (contractnew + 1).ToString();
             string TempNumber = Tempcarnumtxt.Text;
             string Vin = vintxt.Text;
             string date = buydate.Text;
@@ -61,7 +62,18 @@ namespace Cars_System.Pages.GoldenCars
             int CompanyID = userController.CompanyID;
             Cars cars = new Cars();
             cars.InsertCar(Carname, Vin, TempNumber, Buyername, employeename, contractnumber, CompanyID, date);
-            Response.Redirect("Goldenhome");
+            Response.Redirect("/GoldenListCars");
+        }
+        protected int GetHighestContract()
+        {
+            UserController userController = new UserController();
+            string userid = (String)Session["UserID"];
+            userController.GetUserInfoUsingUserId(userid);
+            int CompanyID = userController.CompanyID;
+            Cars cars = new Cars();
+            cars.getcontractnumber(CompanyID);
+            int contractnum = cars.LatestContract;
+            return contractnum;
         }
     }
 }

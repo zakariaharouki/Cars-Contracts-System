@@ -48,7 +48,9 @@ namespace Cars_System.Pages.MuhanadCars
 
         protected void Editbtn_Click(object sender, EventArgs e)
         {
-
+            LinkButton btn = (LinkButton)sender;
+            int CarID = int.Parse(btn.CommandArgument);
+            Response.Redirect("MuhanadEditCar/" + CarID);
         }
 
         protected void Deletebtn_Click(object sender, EventArgs e)
@@ -102,7 +104,7 @@ namespace Cars_System.Pages.MuhanadCars
         protected void Printbtn_Click(object sender, EventArgs e)
         {
             LinkButton btn = (LinkButton)sender;
-            int CarID = int.Parse(btn.CommandArgument);
+            string CarID = (string)(btn.CommandArgument);
             Cars cars = new Cars();
             cars.getCarDeatils(CarID);
 

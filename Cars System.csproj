@@ -107,6 +107,7 @@
     <Content Include="Assets\css\bootstrap-reboot.min.css" />
     <Content Include="Assets\css\bootstrap.css" />
     <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\StyleSheetGoldenhome.css" />
     <Content Include="Assets\css\StyleSheetMuhanadhome.css" />
     <Content Include="Assets\fonts\dripicons-v2.svg" />
     <Content Include="Assets\fonts\fa-brands-400.svg" />
@@ -123,6 +124,7 @@
     <Content Include="Assets\images\5.jpg" />
     <Content Include="Assets\images\6.jpg" />
     <Content Include="Assets\images\7.jpg" />
+    <Content Include="Assets\images\goldencars-1.png" />
     <Content Include="Assets\js\bootstrap.bundle.js" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\js\bootstrap.js" />

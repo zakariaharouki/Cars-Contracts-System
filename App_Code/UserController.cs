@@ -33,17 +33,57 @@ namespace Cars_System.App_Code
             return dt;
 
         }
+        public DataTable getRuknUsers()
+        {
+
+            string Query = "SELECT * FROM Users Where CompanyID=4";
+            SqlDataAdapter da = new SqlDataAdapter(Query, Global.MyConn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+        public DataTable getLuxuryUsers()
+        {
+
+            string Query = "SELECT * FROM Users Where CompanyID=3";
+            SqlDataAdapter da = new SqlDataAdapter(Query, Global.MyConn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+        public DataTable getGoldenUsers()
+        {
+
+            string Query = "SELECT * FROM Users WHERE CompanyID=2";
+            SqlDataAdapter da = new SqlDataAdapter(Query, Global.MyConn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+        public DataTable getMuhanadUsers()
+        {
+
+            string Query = "SELECT * FROM Users WHERE CompanyID=1";
+            SqlDataAdapter da = new SqlDataAdapter(Query, Global.MyConn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
         /// <summary>
         /// This Func is used to get all data of a certain user to view on ViewMore page 
         /// </summary>
         /// <param name="UserId"></param>
-        public void getuserdetails(int UserId)
+        public void getuserdetails(int id)
         {
             string Query = "SELECT * FROM [Users] WHERE UserId = @UserId";
             var connection = new SqlConnection(Global.MyConn);
             SqlCommand Cmd = new SqlCommand(Query, connection);
             connection.Open();
-            Cmd.Parameters.AddWithValue("@UserId", UserId);
+            Cmd.Parameters.AddWithValue("@UserId", id);
             SqlDataReader reader = Cmd.ExecuteReader();
             if (reader.Read())
             {
@@ -165,7 +205,7 @@ namespace Cars_System.App_Code
             connection.Close();
 
         }
-        public void UpdateUser(string fname, string lname, string phonenumber, string email, int roleid, string dateofbirth, int Userid)
+        public void UpdateUser(string fname, string lname, string Phone,string email, int roleid, string dateofbirth, int Userid)
         {
             string query = "Update Users set Fname=@Fname,Lname=@Lname,PhoneNumber=@PhoneNumber,Email=@Email,RoleID=@RoleID,DateofBirth=@DateofBirth Where UserId=@UserId";
             var connection = new SqlConnection(Global.MyConn);
@@ -173,11 +213,10 @@ namespace Cars_System.App_Code
             connection.Open();
             Cmd.Parameters.AddWithValue("@Fname", fname);
             Cmd.Parameters.AddWithValue("@Lname", lname);
-            Cmd.Parameters.AddWithValue("@PhoneNumber", phonenumber);
             Cmd.Parameters.AddWithValue("@Email", email);
+            Cmd.Parameters.AddWithValue("@PhoneNumber", Phone);
             Cmd.Parameters.AddWithValue("@RoleID", roleid);
             Cmd.Parameters.AddWithValue("@DateofBirth", dateofbirth);
-            //Cmd.Parameters.AddWithValue("@Notifications", Notifications);
             Cmd.Parameters.AddWithValue("@UserID", Userid);
             Cmd.ExecuteNonQuery();
             connection.Close();

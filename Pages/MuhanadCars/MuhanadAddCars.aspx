@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-     <h1 style="margin-left: 20px;">Add Employee</h1>
+     <h1 style="margin-left: 20px;">Add Cars</h1>
     <hr />
     <div class="container">
         <div class="row">
@@ -30,7 +30,7 @@
                 <label>Contract Number</label>
             </div>
             <div class="col-3">
-                <asp:TextBox runat="server" ID="contractnumtxt" CssClass=" form-control" placeholder="Contract Number"/>
+                <asp:TextBox runat="server" ID="contractnumtxt" CssClass=" form-control" placeholder="Contract Number" readonly="true"/>
             </div>
         </div>
         <br />

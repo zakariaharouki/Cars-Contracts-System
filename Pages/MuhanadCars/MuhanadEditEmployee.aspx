@@ -72,7 +72,7 @@
             </div>
         </div>--%>
         <br />
-        <div class="row">
+       <%-- <div class="row">
             <div class="col-2">
                 <label>Password</label>
             </div>
@@ -89,7 +89,7 @@
                 <input runat="server" ID="cpassword" class=" form-control" placeholder="Confirm Password" type="password" onkeyup="passvalidate()"/>
             </div>
         </div>
-        <br />
+        <br />--%>
         <div class="row">
             <div class="col-2"></div>
             <div class="col-3">

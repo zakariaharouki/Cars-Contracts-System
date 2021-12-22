@@ -47,7 +47,7 @@
         footer {
             text-align: left;
             padding: 3px;
-            background-color: #09005d !important;
+            background-color: #000000 !important;
             height: auto;
             color: white;
         }
@@ -120,7 +120,7 @@ input:checked + .slider:before {
     </style>
     <link rel="stylesheet" href="Assets/css/icons.css" />
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-    <link href="Assets/css/StyleSheetMuhanadhome.css" rel="stylesheet" />
+    <link href="Assets/css/StyleSheetGoldenhome.css" rel="stylesheet" />
 
     <link href="/Assets/icons/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="Assets/icons/material-design/css/materialdesignicons.css" rel="stylesheet" />
@@ -141,9 +141,9 @@ input:checked + .slider:before {
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <h3>
-                        <a href="Muhanadhome"><img src="Assets/images/Web app logo-white.png" width="200" runat="server" id="logo"/></a></h3>
+                        <a href="Muhanadhome"><img src="Assets/images/goldencars-1.png" width="118" runat="server" id="logo"/></a></h3>
                     <strong><%--<i class="fa fa-align-justify"></i>--%>
-                        <a href="Home"><img src="Assets/images/Favicon white-04.png" style="width:100%" runat="server" id="icon" /></a></strong>
+                        <a href="Home"><img src="Assets/images/goldencars-1.png" style="width:100%" runat="server" id="icon" /></a></strong>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -271,7 +271,7 @@ input:checked + .slider:before {
                             <ul class="nav navbar-nav ml-auto">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#"><i class=" mdi-logout-variant mdi mdi-20px" style="color: #3e3e3d"></i>
-                                        <asp:Button runat="server" Style="margin-left:-32px;border-radius:6px" ID="logoutbtn" Font-Names="helvetica" Height="40" Text="Logout" BackColor="#09005d" BorderColor="Transparent" ForeColor="White" Font-Size="Medium" OnClick="logoutbtn_Click"></asp:Button></a>
+                                        <asp:Button runat="server" Style="margin-left:-32px;border-radius:6px" ID="logoutbtn" Font-Names="helvetica" Height="40" Text="Logout" BackColor="#000000" BorderColor="Transparent" ForeColor="White" Font-Size="Medium" OnClick="logoutbtn_Click"></asp:Button></a>
                                 </li>
                             </ul>
                         </div>

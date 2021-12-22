@@ -69,24 +69,6 @@ namespace Cars_System.Pages.MuhanadCars
         protected global::System.Web.UI.WebControls.TextBox Dob;
 
         /// <summary>
-        /// userpass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userpass;
-
-        /// <summary>
-        /// cpassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword cpassword;
-
-        /// <summary>
         /// EditEmployee control.
         /// </summary>
         /// <remarks>

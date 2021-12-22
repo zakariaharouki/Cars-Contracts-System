@@ -14,6 +14,7 @@ namespace Cars_System.App_Code
         public string ContractNumber { get; set; }
         public string VIN { get; set; }
         public string TempCarNumber { get; set; }
+        public int LatestContract { get; set; }
         public void InsertCar(string Carname, string VIN, string TempCarNumber, string BuyerName, string EmployeeName, string ContractNumber, int CompanyID, string date)
         {
 
@@ -78,7 +79,7 @@ namespace Cars_System.App_Code
             Cmd.ExecuteNonQuery();
             connection.Close();
         }
-        public void getCarDeatils(int CarID)
+        public void getCarDeatils(string CarID)
         {
             string query = "Select * from Cars WHERE CarID=@CarID";
             var connection = new SqlConnection(Global.MyConn);
@@ -98,6 +99,39 @@ namespace Cars_System.App_Code
                 TempCarNumber = reader["TempCarNumber"].ToString();
             }
             connection.Close();
+        }
+        public void getcontractnumber(int CompanyID)
+        {
+
+            string query = "SELECT MAX(ContractNumber) AS LatestContract FROM Cars WHERE CompanyID = @CompanyID";
+            var connection = new SqlConnection(Global.MyConn);
+            connection.Open();
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@CompanyID", CompanyID);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                LatestContract = int.Parse(reader["LatestContract"].ToString());
+            }
+            connection.Close();
+        }
+        public void UpdateCar(string CarID,string Carname, string VIN, string TempCarNumber, string BuyerName, string EmployeeName, string date)
+        {
+            string query = "Update Cars set Carname=@Carname,VIN=@VIN,TempCarNumber=@TempCarNumber,BuyerName=@BuyerName,EmployeeName=@EmployeeName,date=@date Where CarID=@CarID";
+            var connection = new SqlConnection(Global.MyConn);
+            connection.Open();
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@Carname", Carname);
+            cmd.Parameters.AddWithValue("@VIN", VIN);
+            cmd.Parameters.AddWithValue("@TempCarNumber", TempCarNumber);
+            cmd.Parameters.AddWithValue("@BuyerName", BuyerName);
+            cmd.Parameters.AddWithValue("@EmployeeName", EmployeeName);
+            cmd.Parameters.AddWithValue("@date", date);
+            cmd.Parameters.AddWithValue("@CarID", CarID);
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            connection.Close();
+
         }
 
     }
