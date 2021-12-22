@@ -82,7 +82,7 @@ namespace Cars_System.Pages.GoldenCars
             string date = buydate.Text;
             string employeename = Employeenametxt.Text;
             cars.UpdateCar(CarID, Carname, Vin, TempNumber, Buyername, employeename, date);
-            Response.Redirect("/GoldenListCars")
+            Response.Redirect("/GoldenListCars");
         }
     }
 }

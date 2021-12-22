@@ -61,10 +61,10 @@ namespace Cars_System
                                     Response.Redirect("/Goldenhome");
                                     break;
                                 case 3:
-                                    Response.Redirect("/Ruknhome");
+                                    Response.Redirect("/Luxuryhome");
                                     break;
                                 case 4:
-                                    Response.Redirect("/Luxuryhome");
+                                    Response.Redirect("/Ruknhome");
                                     break;
                                 default:
                                     Response.Redirect("Login");
