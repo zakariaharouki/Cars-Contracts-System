@@ -112,5 +112,15 @@ namespace Cars_System.Pages.Rukn
             rptAccounts.DataSource = userController.getMuhanadUsers();
             rptAccounts.DataBind();
         }
+        public string GetRoleName(object sender)
+        {
+            string rolename = "";
+            int Roleid = (int)sender;
+            RolesClass rolesClass = new RolesClass();
+            rolesClass.GetRoleName(Roleid);
+            rolename = rolesClass.RoleName;
+            return rolename;
+
+        }
     }
 }
