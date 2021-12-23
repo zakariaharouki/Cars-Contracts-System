@@ -141,7 +141,7 @@ input:checked + .slider:before {
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <h3>
-                        <a href="Muhanadhome"><img src="Assets/images/goldencars-1.png" width="118" runat="server" id="logo"/></a></h3>
+                        <a href="/Goldenhome"><img src="Assets/images/goldencars-1.png" width="118" runat="server" id="logo"/></a></h3>
                     <strong><%--<i class="fa fa-align-justify"></i>--%>
                         <a href="Home"><img src="Assets/images/goldencars-1.png" style="width:100%" runat="server" id="icon" /></a></strong>
                 </div>

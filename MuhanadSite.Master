@@ -140,10 +140,10 @@ input:checked + .slider:before {
             <!-- Sidebar  -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>
-                        <a href="Muhanadhome"><img src="Assets/images/Web app logo-white.png" width="200" runat="server" id="logo"/></a></h3>
+                    <h3 style="padding-left: 22px;">
+                        <a href="/Muhanadhome"><img src="Assets/images/muhanadcarslogo.png" width="150" runat="server" id="logo"/></a></h3>
                     <strong><%--<i class="fa fa-align-justify"></i>--%>
-                        <a href="Home"><img src="Assets/images/Favicon white-04.png" style="width:100%" runat="server" id="icon" /></a></strong>
+                        <a href="Home"><img src="Assets/images/muhanadcarslogo.png" style="width:100%" runat="server" id="icon" /></a></strong>
                 </div>
 
                 <ul class="list-unstyled components">

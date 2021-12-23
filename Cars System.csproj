@@ -125,6 +125,7 @@
     <Content Include="Assets\images\5.jpg" />
     <Content Include="Assets\images\6.jpg" />
     <Content Include="Assets\images\7.jpg" />
+    <Content Include="Assets\images\muhanadcarslogo.png" />
     <Content Include="Assets\images\RAS LOGO.png" />
     <Content Include="Assets\images\goldencars-1.png" />
     <Content Include="Assets\js\bootstrap.bundle.js" />
@@ -1289,7 +1290,13 @@
     <Content Include="Pages\MuhanadCars\Muhanadhome.aspx" />
     <Content Include="Pages\MuhanadCars\MuhanadListCars.aspx" />
     <Content Include="Pages\MuhanadCars\MuhanadListEmployees.aspx" />
+    <Content Include="Pages\Rukn\RuknAddCars.aspx" />
+    <Content Include="Pages\Rukn\RuknAddEmployee.aspx" />
+    <Content Include="Pages\Rukn\RuknEditCar.aspx" />
+    <Content Include="Pages\Rukn\RuknEditEmployee.aspx" />
     <Content Include="Pages\Rukn\Ruknhome.aspx" />
+    <Content Include="Pages\Rukn\RuknListCars.aspx" />
+    <Content Include="Pages\Rukn\RuknListEmployees.aspx" />
     <Content Include="SharpZipLib\ReadMe.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -1465,12 +1472,54 @@
     <Compile Include="Pages\MuhanadCars\MuhanadListEmployees.aspx.designer.cs">
       <DependentUpon>MuhanadListEmployees.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Rukn\RuknAddCars.aspx.cs">
+      <DependentUpon>RuknAddCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknAddCars.aspx.designer.cs">
+      <DependentUpon>RuknAddCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknAddEmployee.aspx.cs">
+      <DependentUpon>RuknAddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknAddEmployee.aspx.designer.cs">
+      <DependentUpon>RuknAddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknEditCar.aspx.cs">
+      <DependentUpon>RuknEditCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknEditCar.aspx.designer.cs">
+      <DependentUpon>RuknEditCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknEditEmployee.aspx.cs">
+      <DependentUpon>RuknEditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknEditEmployee.aspx.designer.cs">
+      <DependentUpon>RuknEditEmployee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Rukn\Ruknhome.aspx.cs">
       <DependentUpon>Ruknhome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Rukn\Ruknhome.aspx.designer.cs">
       <DependentUpon>Ruknhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknListCars.aspx.cs">
+      <DependentUpon>RuknListCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknListCars.aspx.designer.cs">
+      <DependentUpon>RuknListCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknListEmployees.aspx.cs">
+      <DependentUpon>RuknListEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknListEmployees.aspx.designer.cs">
+      <DependentUpon>RuknListEmployees.aspx</DependentUpon>
     </Compile>
     <Compile Include="RuknSite.Master.cs">
       <DependentUpon>RuknSite.Master</DependentUpon>

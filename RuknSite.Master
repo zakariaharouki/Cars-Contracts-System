@@ -139,7 +139,7 @@ input:checked + .slider:before {
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <h3 style="margin-left: 37px;">
-                        <a href="Muhanadhome"><img src="Assets/images/RAS LOGO.png" width="118" runat="server" id="logo"/></a></h3>
+                        <a href="/Ruknhome"><img src="Assets/images/RAS LOGO.png" width="118" runat="server" id="logo"/></a></h3>
                     <strong><%--<i class="fa fa-align-justify"></i>--%>
                         <a href="Home"><img src="Assets/images/RAS LOGO.png" style="width:100%" runat="server" id="icon" /></a></strong>
                 </div>
@@ -153,11 +153,11 @@ input:checked + .slider:before {
                         </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="/AddGoldenEmployee">Add Employee</a>
+                                <a href="/AddRuknEmployee">Add Employee</a>
                             </li>
 
                             <li>
-                                <a href="/ListGoldenEmployees">List Employees</a>
+                                <a href="/ListRuknEmployees">List Employees</a>
                             </li>
                         
                         </ul>
@@ -170,10 +170,10 @@ input:checked + .slider:before {
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu" runat="server">
                             <li>
-                                <a href="/GoldenAddCars" id="addcars" runat="server">Add Cars</a>
+                                <a href="/RuknAddCars" id="addcars" runat="server">Add Cars</a>
                             </li>
                             <li>
-                                <a href="/GoldenListCars" id="listsoldcars" runat="server">List Sold Cars</a>
+                                <a href="/RuknListCars" id="listsoldcars" runat="server">List Sold Cars</a>
                             </li>
                             
                         </ul>

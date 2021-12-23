@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cars_System.Pages.MuhanadCars
+namespace Cars_System.Pages.Rukn
 {
 
 
-    public partial class MuhanadAddCars
+    public partial class RuknEditCar
     {
 
         /// <summary>
@@ -69,12 +69,12 @@ namespace Cars_System.Pages.MuhanadCars
         protected global::System.Web.UI.WebControls.TextBox buydate;
 
         /// <summary>
-        /// AddCarbtn control.
+        /// EditCarbtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddCarbtn;
+        protected global::System.Web.UI.WebControls.Button EditCarbtn;
     }
 }

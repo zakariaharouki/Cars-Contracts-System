@@ -1,9 +1,14 @@
 ﻿using Cars_System.App_Code;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-namespace Cars_System.Pages.MuhanadCars
+namespace Cars_System.Pages.Rukn
 {
-    public partial class MuhanadAddEmployee : System.Web.UI.Page
+    public partial class RuknAddEmployee : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +23,15 @@ namespace Cars_System.Pages.MuhanadCars
                     switch (userController.CompanyID)
                     {
                         case 1:
+                            Response.Redirect("/Muhanadhome");
+                            break;
+                        case 2:
+                            Response.Redirect("/Goldenhome");
+                            break;
+                        case 3:
+                            Response.Redirect("/Luxuryhome");
+                            break;
+                        case 4:
                             UserController userController1 = new UserController();
                             userController1.GetUserInfoUsingUserId(userid);
                             int roleid = userController.roleid;
@@ -31,16 +45,8 @@ namespace Cars_System.Pages.MuhanadCars
                                     Response.Redirect("Muhanadhome");
                                     break;
                             }
-                            break;
-                        case 2:
-                            Response.Redirect("/Home");
-                            break;
-                        case 3:
-                            Response.Redirect("/Home");
-                            break;
-                        case 4:
                             //GetCurrencies();
-                            Response.Redirect("/Home");
+                            
                             break;
                     }
                 }
@@ -50,7 +56,6 @@ namespace Cars_System.Pages.MuhanadCars
                 }
 
             }
-
         }
 
         protected void AddUserbtn_Click(object sender, EventArgs e)
@@ -63,7 +68,7 @@ namespace Cars_System.Pages.MuhanadCars
             string confirmpassword = cpassword.Value;
             string phone = Phonenumtxt.Text;
             string dateofbirth = Dob.Text;
-            int CompanyID = 1;
+            int CompanyID = 4;
             int Attempts = 0;
             bool Islocked = false;
             if (firstname != null && lastname != null && role != 0 && email != null && password != null && cpassword != null && phone != null)
@@ -73,7 +78,7 @@ namespace Cars_System.Pages.MuhanadCars
                     RegisterClass registerClass = new RegisterClass();
                     if (registerClass.AddUser(firstname, lastname, role, email, password, phone, dateofbirth, CompanyID, Attempts, Islocked) == "Success")
                     {
-                        Response.Redirect("/ListMuhanadEmployees");
+                        Response.Redirect("/ListRuknEmployees");
 
                     }
 
@@ -86,7 +91,7 @@ namespace Cars_System.Pages.MuhanadCars
             }
 
         }
-        public void GetRoles()
+        protected void GetRoles()
         {
             RolesClass rolesClass = new RolesClass();
             rolesdropdown.DataSource = rolesClass.getallroles();

@@ -111,7 +111,15 @@ namespace Cars_System.App_Code
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {
-                LatestContract = int.Parse(reader["LatestContract"].ToString());
+                if (reader.IsDBNull(0))
+                {
+                    LatestContract = 0;
+                }
+                else
+                {
+                    LatestContract = int.Parse(reader["LatestContract"].ToString());
+                }
+               
             }
             connection.Close();
         }

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cars_System.Pages.MuhanadCars
+namespace Cars_System.Pages.Rukn
 {
 
 
-    public partial class MuhanadAddCars
+    public partial class RuknAddCars
     {
 
         /// <summary>

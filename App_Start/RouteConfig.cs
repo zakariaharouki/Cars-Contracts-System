@@ -42,6 +42,15 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("List Luxury Employee","ListLuxuryEmployees", "~/Pages/LuxuryCars/LuxuryListEmployees.aspx");
             RouteTable.Routes.MapPageRoute("Edit Luxury Employees","EditLuxuryEmployees/{ID}", "~/Pages/LuxuryCars/LuxuryEditEmployee.aspx");
 
+            //Rukn Pages
+            RouteTable.Routes.MapPageRoute("Add Cars  Rukn", "RuknAddCars", "~/Pages/Rukn/RuknAddCars.aspx");
+            RouteTable.Routes.MapPageRoute("Edit Cars Rukn", "RuknEditCar/{ID}", "~/Pages/Rukn/RuknEditCar.aspx");
+            RouteTable.Routes.MapPageRoute("List Cars Rukn", "RuknListCars", "~/Pages/Rukn/RuknListCars.aspx");
+
+            RouteTable.Routes.MapPageRoute("Add Rukn Employee", "AddRuknEmployee", "~/Pages/Rukn/RuknAddEmployee.aspx");
+            RouteTable.Routes.MapPageRoute("List Rukn Employee", "ListRuknEmployees", "~/Pages/Rukn/RuknListEmployees.aspx");
+            RouteTable.Routes.MapPageRoute("Edit Rukn Employees", "EditRuknEmployees/{ID}", "~/Pages/Rukn/RuknEditEmployee.aspx");
+
 
             //RouteTable.Routes.MapPageRoute("List Accounts", "ListAccounts", "~/UserControl/Templates/Accounts/ListAccounts.aspx");
             //RouteTable.Routes.MapPageRoute("Edit Accounts", "EditAccounts/{ID}", "~/UserControl/Templates/Accounts/EditAccounts.aspx");

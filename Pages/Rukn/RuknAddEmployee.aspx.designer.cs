@@ -7,74 +7,92 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cars_System.Pages.MuhanadCars
+namespace Cars_System.Pages.Rukn
 {
 
 
-    public partial class MuhanadAddCars
+    public partial class RuknAddEmployee
     {
 
         /// <summary>
-        /// Carnametxt control.
+        /// Fnametxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Carnametxt;
+        protected global::System.Web.UI.WebControls.TextBox Fnametxt;
 
         /// <summary>
-        /// Purchasernametxt control.
+        /// Lnametxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Purchasernametxt;
+        protected global::System.Web.UI.WebControls.TextBox Lnametxt;
 
         /// <summary>
-        /// Tempcarnumtxt control.
+        /// useremail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Tempcarnumtxt;
+        protected global::System.Web.UI.WebControls.TextBox useremail;
 
         /// <summary>
-        /// Employeenametxt control.
+        /// Phonenumtxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Employeenametxt;
+        protected global::System.Web.UI.WebControls.TextBox Phonenumtxt;
 
         /// <summary>
-        /// vintxt control.
+        /// rolesdropdown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox vintxt;
+        protected global::System.Web.UI.WebControls.DropDownList rolesdropdown;
 
         /// <summary>
-        /// buydate control.
+        /// Dob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox buydate;
+        protected global::System.Web.UI.WebControls.TextBox Dob;
 
         /// <summary>
-        /// AddCarbtn control.
+        /// userpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddCarbtn;
+        protected global::System.Web.UI.WebControls.TextBox userpass;
+
+        /// <summary>
+        /// cpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword cpassword;
+
+        /// <summary>
+        /// AddUserbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddUserbtn;
     }
 }
