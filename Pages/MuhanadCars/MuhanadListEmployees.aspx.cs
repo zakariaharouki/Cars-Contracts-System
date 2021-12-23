@@ -21,13 +21,13 @@ namespace Cars_System.Pages.MuhanadCars
                             GetEmployees();
                             break;
                         case 2:
-                            Response.Redirect("Goldenhome");
-                            break;
-                        case 3:
-                            Response.Redirect("Luxuryhome");
-                            break;
-                        case 4:
-                            Response.Redirect("Ruknhome");
+                            Response.Redirect("/Goldenhome");
+                            break;             
+                        case 3:                
+                            Response.Redirect("/Luxuryhome");
+                            break;             
+                        case 4:                
+                            Response.Redirect("/Ruknhome");
                             break;
 
                     }

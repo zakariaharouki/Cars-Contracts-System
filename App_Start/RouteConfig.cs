@@ -34,13 +34,13 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("Edit Golden Employees","EditGoldenEmployees/{ID}", "~/Pages/GoldenCars/GoldenEditEmployee.aspx");
 
             //Luxury Pages                            
-            RouteTable.Routes.MapPageRoute("Add Cars  Luxury", "GoldenAddCars", "~/Pages/GoldenCars/GoldenAddCars.aspx");
-            RouteTable.Routes.MapPageRoute("Edit Cars Luxury", "GoldenEditCar/{ID}", "~/Pages/GoldenCars/GoldenEditCar.aspx");
-            RouteTable.Routes.MapPageRoute("List Cars Luxury", "GoldenListCars", "~/Pages/GoldenCars/GoldenListCars.aspx");
+            RouteTable.Routes.MapPageRoute("Add Cars  Luxury", "LuxuryAddCars", "~/Pages/LuxuryCars/LuxuryAddCars.aspx");
+            RouteTable.Routes.MapPageRoute("Edit Cars Luxury", "LuxuryEditCar/{ID}", "~/Pages/LuxuryCars/LuxuryEditCar.aspx");
+            RouteTable.Routes.MapPageRoute("List Cars Luxury", "LuxuryListCars", "~/Pages/LuxuryCars/LuxuryListCars.aspx");
 
             RouteTable.Routes.MapPageRoute("Add Luxury Employee","AddLuxuryEmployee", "~/Pages/LuxuryCars/LuxuryAddEmployee.aspx");
-            RouteTable.Routes.MapPageRoute("List Luxury Employee","ListLuxuryEmployees", "~/Pages/LuxuryCars/LuxuryListEmployees.aspx");
-            RouteTable.Routes.MapPageRoute("Edit Luxury Employees","EditLuxuryEmployees/{ID}", "~/Pages/LuxuryCars/LuxuryEditEmployee.aspx");
+            RouteTable.Routes.MapPageRoute("List Luxury Employee", "ListLuxuryEmployees", "~/Pages/LuxuryCars/LuxuryListEmployees.aspx");
+            RouteTable.Routes.MapPageRoute("Edit Luxury Employees", "EditLuxuryEmployees/{ID}", "~/Pages/LuxuryCars/LuxuryEditEmployee.aspx");
 
             //Rukn Pages
             RouteTable.Routes.MapPageRoute("Add Cars  Rukn", "RuknAddCars", "~/Pages/Rukn/RuknAddCars.aspx");

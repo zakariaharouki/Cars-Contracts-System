@@ -28,23 +28,23 @@ namespace Cars_System.Pages.MuhanadCars
                                     GetCar();
                                     break;
                                 case 2:
-                                    Response.Redirect("Muhanadhome");
+                                    Response.Redirect("/Muhanadhome");
                                     break;
                                 case -1:
-                                    Response.Redirect("Muhanadhome");
+                                    Response.Redirect("/Muhanadhome");
                                     break;
                             }
                            
 
                             break;
                         case 2:
-                            Response.Redirect("Goldenhome");
+                            Response.Redirect("/Goldenhome");
                             break;
                         case 3:
-                            Response.Redirect("Luxuryhome");
+                            Response.Redirect("/Luxuryhome");
                             break;
                         case 4:
-                            Response.Redirect("Ruknhome");
+                            Response.Redirect("/Ruknhome");
                             break;
 
                     }

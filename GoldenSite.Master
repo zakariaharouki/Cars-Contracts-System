@@ -6,8 +6,8 @@
 <head runat="server">
     <meta name="keywords" content="cars,contracts,automotive,car dealership,car dealer,showroom,carfax,cars reseller" />
     <meta name="description" content="" />
-    <meta name="author" content="Muhanad Cars Contracts System" />
-    <title>Muhanad Cars Contracts System</title>
+    <meta name="author" content="Golden Cars Contracts System" />
+    <title>Golden Cars Contracts System</title>
     <style>
         body{
             background-color:#cacaca !important;

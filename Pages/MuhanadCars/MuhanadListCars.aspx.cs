@@ -25,13 +25,13 @@ namespace Cars_System.Pages.MuhanadCars
                             GetCars();
                             break;
                         case 2:
-                            Response.Redirect("Goldenhome");
-                            break;
-                        case 3:
-                            Response.Redirect("Luxuryhome");
-                            break;
-                        case 4:
-                            Response.Redirect("Ruknhome");
+                            Response.Redirect("/Goldenhome");
+                            break;             
+                        case 3:                
+                            Response.Redirect("/Luxuryhome");
+                            break;             
+                        case 4:                
+                            Response.Redirect("/Ruknhome");
                             break;
 
                     }
@@ -107,10 +107,6 @@ namespace Cars_System.Pages.MuhanadCars
             string CarID = (string)(btn.CommandArgument);
             Cars cars = new Cars();
             cars.getCarDeatils(CarID);
-
-
-
-
             PdfDocument doc = new PdfDocument();
             doc.LoadFromFile(@"../../Assets/pdf/muhanadpdf.pdf");
             PdfFormWidget formWidget = doc.Form as PdfFormWidget;
@@ -213,11 +209,5 @@ namespace Cars_System.Pages.MuhanadCars
 
 
         }
-
-
-
-
-              
-
-            }
-        }
+    }
+}

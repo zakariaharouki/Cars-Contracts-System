@@ -33,14 +33,14 @@ namespace Cars_System.Pages.MuhanadCars
                             }
                             break;
                         case 2:
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Goldenhome");
                             break;
                         case 3:
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Luxuryhome");
                             break;
                         case 4:
                             //GetCurrencies();
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Ruknhome");
                             break;
                     }
                 }

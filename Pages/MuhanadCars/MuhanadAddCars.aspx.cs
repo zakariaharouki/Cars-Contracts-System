@@ -56,7 +56,7 @@ namespace Cars_System.Pages.MuhanadCars
             int CompanyID = userController.CompanyID;
             Cars cars = new Cars();
             cars.InsertCar(Carname, Vin, TempNumber, Buyername, employeename, contractnumber, CompanyID, date);
-            Response.Redirect("Muhanadhome");
+            Response.Redirect("/Muhanadhome");
         }
         protected int GetHighestContract()
         {

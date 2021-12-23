@@ -107,6 +107,7 @@
     <Content Include="Assets\css\bootstrap-reboot.min.css" />
     <Content Include="Assets\css\bootstrap.css" />
     <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\StyleSheetLuxuryhome.css" />
     <Content Include="Assets\css\StyleSheetRuknhome.css" />
     <Content Include="Assets\css\StyleSheetGoldenhome.css" />
     <Content Include="Assets\css\StyleSheetMuhanadhome.css" />
@@ -125,6 +126,7 @@
     <Content Include="Assets\images\5.jpg" />
     <Content Include="Assets\images\6.jpg" />
     <Content Include="Assets\images\7.jpg" />
+    <Content Include="Assets\images\luxurycars.png" />
     <Content Include="Assets\images\muhanadcarslogo.png" />
     <Content Include="Assets\images\RAS LOGO.png" />
     <Content Include="Assets\images\goldencars-1.png" />

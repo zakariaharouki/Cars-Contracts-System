@@ -24,19 +24,9 @@ namespace Cars_System
                             switch (userController.roleid)
                             {
                                 case 1:
-                                    //pendingenquiries.Visible = false;
-                                    //CollabEnquiriesSubmenuControl.Visible = false;
-                                    //ChangeMypassLink.HRef = "/changemypass/" + userid;
-                                    //TeamSubmenuControl.Visible = false;
-                                    //neededproductslisting.Visible = false;
-                                    //string adminpath = Server.MapPath("~/Files/Images");
-                                    //processDirectory1(@"" + adminpath);
-                                    //processDirectory1(@"C:\Users\Zakaria\source\repos\Amags Global Web application\Amags Global Web application\Files\Images");
                                     break;
                                 case 2:
                                     AdmiSubMenu.Visible = false;
-                                    //addusers.Visible = false;
-
                                     break;
                             }
                             break;
