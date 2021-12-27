@@ -18,13 +18,13 @@ namespace Cars_System.Pages.Rukn
                     switch (userController.CompanyID)
                     {
                         case 1:
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Muhanadhome");
                             break;
                         case 2:
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Goldenhome");
                             break;
                         case 3:
-                            Response.Redirect("/Home");
+                            Response.Redirect("/Luxuryhome");
                             break;
                         case 4:
                             //GetCurrencies();
@@ -45,7 +45,7 @@ namespace Cars_System.Pages.Rukn
                 }
                 else
                 {
-                    Response.Redirect("/Loginform");
+                    Response.Redirect("/Login");
                 }
             }
         }

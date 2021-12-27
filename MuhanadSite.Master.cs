@@ -29,8 +29,10 @@ namespace Cars_System
                                     //string adminpath = Server.MapPath("~/Files/Images");
                                     //processDirectory1(@"" + adminpath);
                                     //processDirectory1(@"C:\Users\Zakaria\source\repos\Amags Global Web application\Amags Global Web application\Files\Images");
+                                    ChangeMypassLink.HRef = "/MuhanadChangeMyPass/" + userid;
                                     break;
                                 case 2:
+                                    ChangeMypassLink.HRef = "/MuhanadChangeMyPass/" + userid;
                                     AdmiSubMenu.Visible = false;
                                     //addusers.Visible = false;
 

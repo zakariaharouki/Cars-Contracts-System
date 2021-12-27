@@ -1272,6 +1272,7 @@
     <Content Include="js\datatables.js" />
     <Content Include="Pages\GoldenCars\GoldenAddCars.aspx" />
     <Content Include="Pages\GoldenCars\GoldenAddEmployee.aspx" />
+    <Content Include="Pages\GoldenCars\GoldenChangeMyPassword.aspx" />
     <Content Include="Pages\GoldenCars\GoldenEditCar.aspx" />
     <Content Include="Pages\GoldenCars\GoldenEditEmployee.aspx" />
     <Content Include="Pages\GoldenCars\Goldenhome.aspx" />
@@ -1280,11 +1281,13 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryAddCars.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryAddEmployee.aspx" />
+    <Content Include="Pages\LuxuryCars\LuxuryChangeMyPassword.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryEditCar.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryEditEmployee.aspx" />
     <Content Include="Pages\LuxuryCars\Luxuryhome.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryListCars.aspx" />
     <Content Include="Pages\LuxuryCars\LuxuryListEmployees.aspx" />
+    <Content Include="Pages\MuhanadCars\MuhanadChangeMyPassword.aspx" />
     <Content Include="Pages\MuhanadCars\MuhanadEditCar.aspx" />
     <Content Include="Pages\MuhanadCars\MuhanadEditEmployee.aspx" />
     <Content Include="Pages\MuhanadCars\MuhanadAddCars.aspx" />
@@ -1294,6 +1297,7 @@
     <Content Include="Pages\MuhanadCars\MuhanadListEmployees.aspx" />
     <Content Include="Pages\Rukn\RuknAddCars.aspx" />
     <Content Include="Pages\Rukn\RuknAddEmployee.aspx" />
+    <Content Include="Pages\Rukn\RuknChangeMyPassword.aspx" />
     <Content Include="Pages\Rukn\RuknEditCar.aspx" />
     <Content Include="Pages\Rukn\RuknEditEmployee.aspx" />
     <Content Include="Pages\Rukn\Ruknhome.aspx" />
@@ -1340,6 +1344,13 @@
     </Compile>
     <Compile Include="Pages\GoldenCars\GoldenAddEmployee.aspx.designer.cs">
       <DependentUpon>GoldenAddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GoldenCars\GoldenChangeMyPassword.aspx.cs">
+      <DependentUpon>GoldenChangeMyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GoldenCars\GoldenChangeMyPassword.aspx.designer.cs">
+      <DependentUpon>GoldenChangeMyPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\GoldenCars\GoldenEditCar.aspx.cs">
       <DependentUpon>GoldenEditCar.aspx</DependentUpon>
@@ -1390,6 +1401,13 @@
     <Compile Include="Pages\LuxuryCars\LuxuryAddEmployee.aspx.designer.cs">
       <DependentUpon>LuxuryAddEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LuxuryCars\LuxuryChangeMyPassword.aspx.cs">
+      <DependentUpon>LuxuryChangeMyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LuxuryCars\LuxuryChangeMyPassword.aspx.designer.cs">
+      <DependentUpon>LuxuryChangeMyPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LuxuryCars\LuxuryEditCar.aspx.cs">
       <DependentUpon>LuxuryEditCar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1424,6 +1442,13 @@
     </Compile>
     <Compile Include="Pages\LuxuryCars\LuxuryListEmployees.aspx.designer.cs">
       <DependentUpon>LuxuryListEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MuhanadCars\MuhanadChangeMyPassword.aspx.cs">
+      <DependentUpon>MuhanadChangeMyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MuhanadCars\MuhanadChangeMyPassword.aspx.designer.cs">
+      <DependentUpon>MuhanadChangeMyPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MuhanadCars\MuhanadEditCar.aspx.cs">
       <DependentUpon>MuhanadEditCar.aspx</DependentUpon>
@@ -1487,6 +1512,13 @@
     </Compile>
     <Compile Include="Pages\Rukn\RuknAddEmployee.aspx.designer.cs">
       <DependentUpon>RuknAddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknChangeMyPassword.aspx.cs">
+      <DependentUpon>RuknChangeMyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rukn\RuknChangeMyPassword.aspx.designer.cs">
+      <DependentUpon>RuknChangeMyPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Rukn\RuknEditCar.aspx.cs">
       <DependentUpon>RuknEditCar.aspx</DependentUpon>

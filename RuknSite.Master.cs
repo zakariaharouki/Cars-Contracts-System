@@ -30,9 +30,10 @@ namespace Cars_System
                             switch (userController.roleid)
                             {
                                 case 1:
-
+                                    ChangeMypassLink.HRef = "/RuknChangeMyPass/"+userid;
                                     break;
                                 case 2:
+                                    ChangeMypassLink.HRef = "/RuknChangeMyPass/"+userid;
                                     AdmiSubMenu.Visible = false;
 
 

@@ -1,9 +1,14 @@
-﻿using Cars_System.App_Code;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Cars_System.App_Code;
 
-namespace Cars_System
+namespace Cars_System.Pages.GoldenCars
 {
-    public partial class LuxurySite : System.Web.UI.MasterPage
+    public partial class GoldenChangeMyPassword : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -12,8 +17,8 @@ namespace Cars_System
                 if (Session["UserID"] != null)
                 {
                     UserController userController = new UserController();
-                    string userid = (String)Session["UserID"];
-                    userController.GetUserInfoUsingUserId(userid);
+                    string sessionid = (String)Session["UserID"];
+                    userController.GetUserInfoUsingUserId(sessionid);
                     //int roleid = userController.roleid;
                     switch (userController.CompanyID)
                     {
@@ -21,22 +26,21 @@ namespace Cars_System
                             Response.Redirect("/Muhanadhome");
                             break;
                         case 2:
-                            Response.Redirect("/Goldenhome");
-                            break;
-                        case 3:
-                            switch (userController.roleid)
+                            string userid = (string)this.RouteData.Values["ID"];
+                            switch (Session["UserID"].ToString() == userid)
                             {
-                                case 1:
-                                    ChangeMypassLink.HRef = "/LuxuryChangeMyPass/" + userid;
+                                case true:
+
                                     break;
-                                case 2:
-                                    ChangeMypassLink.HRef = "/LuxuryChangeMyPass/" + userid;
-                                    AdmiSubMenu.Visible = false;
+                                case false:
+                                    Response.Redirect("/Goldenhome");
                                     break;
                             }
                             break;
+                        case 3:
+                            Response.Redirect("/Luxuryhome");
+                            break;
                         case 4:
-                            //GetCurrencies();
                             Response.Redirect("/Ruknhome");
                             break;
                     }
@@ -45,14 +49,12 @@ namespace Cars_System
                 {
                     Response.Redirect("/Login");
                 }
-
             }
         }
 
-        protected void logoutbtn_Click(object sender, EventArgs e)
+        protected void Changepassbtn_Click(object sender, EventArgs e)
         {
-            Session.Clear();
-            Response.Redirect("Login");
+
         }
     }
 }

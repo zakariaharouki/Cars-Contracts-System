@@ -23,6 +23,7 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("Add Muhanad Employee","AddMuhanadEmployee", "~/Pages/MuhanadCars/MuhanadAddEmployee.aspx");
             RouteTable.Routes.MapPageRoute("List Muhanad Employee","ListMuhanadEmployees", "~/Pages/MuhanadCars/MuhanadListEmployees.aspx");
             RouteTable.Routes.MapPageRoute("Edit Muhanad Employees","EditMuhanadEmployees/{ID}", "~/Pages/MuhanadCars/MuhanadEditEmployee.aspx");
+            RouteTable.Routes.MapPageRoute("Change My Password Muhanad", "MuhanadChangeMyPass/{ID}", "~/Pages/MuhanadCars/MuhanadChangeMyPassword.aspx");
 
             //Golden Pages                            
             RouteTable.Routes.MapPageRoute("Add Cars  Golden", "GoldenAddCars", "~/Pages/GoldenCars/GoldenAddCars.aspx");
@@ -32,6 +33,7 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("Add Golden Employee",  "AddGoldenEmployee", "~/Pages/GoldenCars/GoldenAddEmployee.aspx");
             RouteTable.Routes.MapPageRoute("List Golden Employee", "ListGoldenEmployees", "~/Pages/GoldenCars/GoldenListEmployees.aspx");
             RouteTable.Routes.MapPageRoute("Edit Golden Employees","EditGoldenEmployees/{ID}", "~/Pages/GoldenCars/GoldenEditEmployee.aspx");
+            RouteTable.Routes.MapPageRoute("Change My Password Golden", "GoldenChangeMyPass/{ID}", "~/Pages/GoldenCars/GoldenChangeMyPassword.aspx");
 
             //Luxury Pages                            
             RouteTable.Routes.MapPageRoute("Add Cars  Luxury", "LuxuryAddCars", "~/Pages/LuxuryCars/LuxuryAddCars.aspx");
@@ -41,7 +43,7 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("Add Luxury Employee","AddLuxuryEmployee", "~/Pages/LuxuryCars/LuxuryAddEmployee.aspx");
             RouteTable.Routes.MapPageRoute("List Luxury Employee", "ListLuxuryEmployees", "~/Pages/LuxuryCars/LuxuryListEmployees.aspx");
             RouteTable.Routes.MapPageRoute("Edit Luxury Employees", "EditLuxuryEmployees/{ID}", "~/Pages/LuxuryCars/LuxuryEditEmployee.aspx");
-
+            RouteTable.Routes.MapPageRoute("Change My Password Luxury", "LuxuryChangeMyPass/{ID}", "~/Pages/LuxuryCars/LuxuryChangeMyPassword.aspx");
             //Rukn Pages
             RouteTable.Routes.MapPageRoute("Add Cars  Rukn", "RuknAddCars", "~/Pages/Rukn/RuknAddCars.aspx");
             RouteTable.Routes.MapPageRoute("Edit Cars Rukn", "RuknEditCar/{ID}", "~/Pages/Rukn/RuknEditCar.aspx");
@@ -50,6 +52,8 @@ namespace Cars_System.App_Start
             RouteTable.Routes.MapPageRoute("Add Rukn Employee", "AddRuknEmployee", "~/Pages/Rukn/RuknAddEmployee.aspx");
             RouteTable.Routes.MapPageRoute("List Rukn Employee", "ListRuknEmployees", "~/Pages/Rukn/RuknListEmployees.aspx");
             RouteTable.Routes.MapPageRoute("Edit Rukn Employees", "EditRuknEmployees/{ID}", "~/Pages/Rukn/RuknEditEmployee.aspx");
+            RouteTable.Routes.MapPageRoute("Change My Password Rukn", "RuknChangeMyPass/{ID}", "~/Pages/Rukn/RuknChangeMyPassword.aspx");
+
 
 
             //RouteTable.Routes.MapPageRoute("List Accounts", "ListAccounts", "~/UserControl/Templates/Accounts/ListAccounts.aspx");

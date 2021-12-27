@@ -126,7 +126,7 @@ namespace Cars_System.App_Code
             SqlCommand command = new SqlCommand("Proc_ChangePassword", connection);
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@UserId", UserId);
-            command.Parameters.AddWithValue("@PasswordHash", PasswordHash);
+            command.Parameters.AddWithValue("@Password", PasswordHash);
             command.Parameters.Add("@responsemessage", SqlDbType.NVarChar, 255).Direction = ParameterDirection.Output;
             command.ExecuteNonQuery();
             SqlDataReader reader = command.ExecuteReader();
